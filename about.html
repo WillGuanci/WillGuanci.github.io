@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="climbing2.html">Climbing</a></li>
+                <li><a href= "/Users/admin/Documents/GitHub/portfolioSite/assets/final_site_resume_will_guanci.pdf" target = "_blank">Resume</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="boxes-container">
+        <div class="box-section">
+            <button class="collapsible">Schoolwork</button>
+            <div class="content">
+                <p>
+                    As an Information Science student, I have chosen to specialize my learning in data analytics and machine learning.
+                    Below is a list of applicable classes I've taken with some notable projects.
+                    <ul>
+                        <li> Applied Machine Learning</li>
+                        <ul> 
+                            <li>Learned a variety of ML algorithms including SVM's, KNN, Decision and Tree Classifiers</li>
+                            <li>Use of multiple multiple model validation methods such as holdout, k-fold cross validation, and holdout.</li>
+                        </ul>
+                        <li> Music as Information</li>
+                        <ul>
+                            <li>
+                                Developed python project to examine album covers from various artists in an effort to find correlation between colors
+                                and album sentiment.
+                            </li>
+                            <li>Utilized BERT sentiment classifer to classify song lyric sentiment
+                            </li>
+                            <li>
+                                Utilized SpotiPy API to obtain data on the full discographies of several artists in order to perform analysis.
+                            </li>
+                        </ul>
+                        
+                        <li>Information Exposition</li>
+                        <ul>
+                            <li>
+                                Completed a myriad of data exploration projects using both provided, and open datasets.
+                            </li>
+                        </ul>
+                        <li>
+                            Major GPA: 3.759
+                        </li>
+                    </ul>
+                </p>
+                <!-- Additional content here -->
+            </div>
+        </div>
+        <div class="box-section">
+            <button class="collapsible">Personal Goals</button>
+            <div class="content">
+                <p>
+                    My personal goals are heavily centered around my own climbing and coaching. I'm always eager to learn more
+                    about how I can inspire my athletes to try hard both on and off the wall. From working with Team ABC, my aim
+                    is to grow as both a coach and climber, utilizing my opportunities to talk and train with other strong athletes 
+                    to both improve my own ability, but also gaining useful information about how I can inspire the same love for the sport
+                    in athletes I train.
+                </p>
+            </div>
+        </div>
+        <div class="box-section">
+            <button class="collapsible">Professional Goals</button>
+            <div class="content">
+                <p>
+                    Currently, I'm working towards finishing my Information Science degree at CU Boulder, which 
+                    I'll be done with December 2024. As I finish my schooling, I'm looking for an internship either here in Boulder,
+                    or remote working in the Machine Learning or Data Science industries. 
+                </p>
+            </div>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+        
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        
+    <!-- Repeat the structure for other sections if needed -->
+</body>
+</html>

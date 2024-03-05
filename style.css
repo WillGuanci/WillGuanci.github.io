@@ -1,0 +1,395 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0ead6;
+}
+
+header {
+    background-color: #333;
+    color: #11169c;
+    padding: 20px;
+    width: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #295e10;
+    font-family: "Playfair Display", arial;
+}
+
+#home {
+    background-color: #ffffff;
+}
+
+#about, #portfolio, #climbing {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+#profile-image {
+    background: url('/Users/admin/Desktop/OneDrive/Desktop/Selfie.jpg') no-repeat center center;
+    background-size: cover;
+    width: 1200px; /* Equal width and height to form a circle */
+    height: 300px;
+    border-radius: 50%; /* Rounds the corners into a circle */
+    float: left; /* Aligns the div to the left */
+    margin-right: 20px; /* Adds some space between the image and the adjacent content */
+    margin-left: 30px;
+    margin-top: 20px;
+    background-position: left center;
+}
+
+.box-section {
+    width: 300px; /* Width of each box */
+    height: 100px; /* Height of each box, consider making this 'auto' if the content varies in size */
+    margin: 20px; /* Adds some space around each box */
+    padding: 20px; /* Space inside the box, around the content */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    background-color: #fff;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the boxes horizontally */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    gap: 20px; /* Adds space between the boxes */
+}
+
+.box-section a, .box-section a:visited {
+    display: block; /* Makes the entire box clickable */
+    color: inherit; /* Inherits the text color from the parent */
+    text-decoration: none; /* Removes underline from links */
+    font-family: "Playfair-Display", "serif";
+    height: 100%; /* Ensures the link fills the entire box */
+}
+
+/* To specifically target the hover, active, and focus states */
+.box-section a:hover, .box-section a:active, .box-section a:focus {
+    text-decoration: none; /* Ensures no underline appears on hover, active, or focus */
+    color: inherit; /* Keeps the text color consistent */
+}
+
+.article-link {
+    border: 1px solid #ddd; /* Adds a light border around each link */
+    border-radius: 8px; /* Rounds the corners of the border */
+    overflow: hidden; /* Ensures the content fits within the borders */
+    margin-bottom: 20px; /* Adds space between article links */
+    display: flex; /* Aligns the thumbnail and article info side by side */
+    text-decoration: none; /* Removes underline from the link */
+    background-color: #ffffff; /* Sets a white background for each article link */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+.article-link:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth on hover */
+    background-color: #f9f9f9; /* Slightly changes the background color on hover for a subtle effect */
+}
+.article-link:hover, .article-link:hover a {
+    /* Hover styles for the container and the text/link elements inside */
+    color: #295e10; /* Example: Change text color on hover */
+}
+
+
+.article-link a {
+    color: inherit; /* Ensures the text uses the parent's text color */
+    text-decoration: none; /* Removes underline from the link */
+    display: flex; /* Ensures the link contents align side by side */
+}
+
+.article-thumbnail {
+    width: 120px; /* Sets a fixed width for the thumbnail */
+    height: auto; /* Ensures the thumbnail's height is proportional to its width */
+    object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+}
+
+.article-info {
+    padding: 10px; /* Adds some space around the article info */
+}
+
+.article-info h3 {
+    margin-top: 0; /* Removes default top margin from the title */
+}
+
+.article-info p {
+    margin-bottom: 0; /* Removes default bottom margin from the description */
+}
+
+/* Align images to the right */
+.align-right {
+    float: right; /* Aligns the image to the right */
+    margin-left: 20px; /* Adds some space between the image and the text */
+}
+
+/* Align images to the left */
+.align-left {
+    float: left; /* Aligns the image to the left */
+    margin-right: 20px; /* Adds some space between the image and the text */
+    margin-bottom: 100px;
+}
+
+/* Clear floats after each section to maintain layout */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.align-right, .align-left {
+    border-radius: 50%; /* Creates the circular shape */
+    width: 400px; /* Sets the width of the circle */
+    height: 400px; /* Sets the height of the circle, equal to the width for a perfect circle */
+    object-fit: cover; /* Ensures the image covers the area, useful for non-square images */
+    float: left; /* Aligns the image to the left or right as per the class */
+    margin-right: 40px; /* Adds some space between the image and the adjacent text */
+}
+
+/* Adjust for the right-aligned images */
+.align-right {
+    float: right; /* Aligns the image to the right */
+    margin-right: 0; /* Resets the right margin */
+    margin-left: 20px; /* Adds space on the left side */
+}
+
+
+.clearfix {
+    clear: both; /* Stops elements from floating around the preceding floated element */
+}
+.circular-hero {
+    width: 400px; /* Adjust based on desired size */
+    height: 400px; /* Equal to the width to maintain a circle */
+    border-radius: 50%; /* Creates the circular shape */
+    object-fit: cover; /* Ensures the image covers the circle, useful for non-square images */
+    float: left; /* Positions the image to the left */
+    margin-right: 20px; /* Adds some space between the image and the adjacent content */
+}
+body {
+    overflow-x: hidden; /* Hides horizontal overflow */
+}
+.home-content {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    padding: 20px; /* Adds some space inside the container */
+}
+
+.home-image {
+    max-width: 100%; /* Ensures the image is responsive and doesn't overflow its container */ /* Maintains the image's aspect ratio */
+    margin-right: 20px; /* Adds some space between the image and the text */
+}
+
+.home-text {
+    font-size: 30px; /* Sets the size of the font */
+    font-family: "Playfair Display", serif;
+    color: black; /* Sets the font color to black */
+    margin-left: 40px; 
+    /* Add any additional styling you need for your text */
+}
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+
+    .home-image {
+        margin-right: 0; /* Removes the margin on the right of the image */
+        margin-bottom: 20px; /* Adds some space below the image */
+    }
+}
+
+.playfair-display-heading {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust based on your design */
+}
+
+.header-contact a {
+    margin-left: 1000px; /* Space between the email and LinkedIn link */
+    text-decoration: none; /* Optional: Removes the underline from links */
+    color: inherit; /* Optional: Inherits the text color from the header */
+    align-items: right;
+}
+
+/* Additional styling for links on hover */
+.header-contact a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+/* Style the nav element */
+nav {
+    text-align: center; /* Center-align the navigation links */
+    background-color: #333; /* Set a background color for the navigation bar */
+}
+
+/* Style the unordered list */
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: inline-block; /* Align the list items in a row */
+}
+
+/* Style each list item */
+nav li {
+    display: inline; /* Display list items in a row */
+}
+
+/* Style each link */
+nav a {
+    display: inline-block; /* Allows padding and margin to be applied properly */
+    padding: 10px 20px; /* Add padding around the links for a larger clickable area */
+    color: white; /* Set the text color */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s; /* Smooth transition for background color change on hover */
+}
+
+/* Add a hover effect to links */
+nav a:hover {
+    background-color: #555; /* Change the background color on hover */
+    border-radius: 5px; /* Optional: Add rounded corners to the hover effect */
+}
+#how-i-started h2{
+    font-size:24px;
+    font-family: "Playfair-Display", "serif";
+    line-height: 1.6;
+}
+#how-i-started {
+    font-size: 24px;
+    font-family: "Playfair-Display", "serif";
+}
+#my-experience h2{
+    font-size: 24px;
+    font-family: "Playfair-Display", "serif";
+}
+#my-experience{
+    font-size: 20px;    
+    font-family: "Playfair-Display", "serif";
+
+}
+#my-goals h2{
+    font-size: 24px;    
+    font-family: "Playfair-Display", "serif";
+}
+#about-content h1{
+    font-size: 32px;    
+    font-family: "Playfair-Display", "serif";
+}
+#my-goals{
+    font-size: 24px;
+    font-family: "Playfair-Display", "serif";
+}
+#medium-articles{
+    font-size: 24px;
+    font-family: "Playfair-Display", "serif";
+}
+footer a i {
+    font-size: 30px; /* Adjust the size of the icons */
+    color: #fbfcfa; /* Set the icon color */
+    margin-right: 10px; /* Add some space between the icons if necessary */
+}
+
+footer a:hover i {
+    color: #295e10; /* Change icon color on hover */
+}
+
+.box-section {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #f0f0f0; /* Initial background color */
+    transform: translateY(0);
+    height:auto;
+}
+
+.box-section:hover {
+    background-color: #e0e0e0; /* Light color change on hover */
+    transform: translateY(-5px); /* Slight rise effect */
+}
+
+.box-section a {
+    transition: transform 0.3s ease;
+    display: block;
+    transform: translateY(0);
+}
+
+.box-section:hover a {
+    transform: translateY(-10px); /* Text rise effect */
+}
+.box-section h1, .box-section h2, .box-section h3 {
+    font-family: Arial, sans-serif; /* Specifies Arial font for headers */
+   /* Ensures the header text is black */
+    /* Add any additional styling for your headers here */
+}
+.collapsible {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px 10px 0 0; /* Rounded corners on top */
+}
+
+.active, .collapsible:hover {
+    background-color: #333;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 0 0 10px 10px; /* Rounded corners on bottom */
+    display:block
+}
+.box-image {
+    width: 100%; /* Makes the image responsive to the box width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    margin-top: 15px; /* Removes space above the image */
+    margin-bottom: 0; /* Removes space below the image */
+    border-radius: 15px; /* Gives the image rounded corners */
+}
+
+

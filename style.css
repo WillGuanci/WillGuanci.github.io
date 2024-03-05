@@ -57,7 +57,7 @@ footer {
     width: 100%;
 }
 #profile-image {
-    background: url('/Users/admin/Desktop/OneDrive/Desktop/Selfie.jpg') no-repeat center center;
+    background: url('Selfie.jpg') no-repeat center center;
     background-size: cover;
     width: 1200px; /* Equal width and height to form a circle */
     height: 300px;
